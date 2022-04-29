@@ -1,0 +1,1 @@
+/* arquivo principal de animações em js */
