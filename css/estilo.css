@@ -1,4 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 :root 
 {
     /* variaveis globais do css */
+}
+
+#topo
+{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#topo nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#topo a
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.1em;
+    
+    transition: all .5s;
+}
+#topo a:hover
+{
+    color: tomato;
+}
+#banner
+{
+    width: 100%;
+    height: 100%;
+}
+#banner .wrapper
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+    transition: 1s;
+}
+.wrapper.active
+{
+    z-index: -1;
+}
+
+
+#video
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    z-index: -1;
+}
+#logo
+{
+    width: 300px;
+    height: 200px;
+    background-color: #ff000070;
+}
+
+
+.sobre,
+.servico,
+.duvidas,
+.artistas
+{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.site {
+    width: 100%; /*Largura*/
+    max-width: 1200px; /*Largura máxima*/
+}
+.topo {
+    display: flex; /*Colocar os itens uns ao lado dos outros*/
+    justify-content: space-between; /*Espaçamento central entre os itens*/
+}
+.sobre {
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.sobre img {
+    width: 630px;
+    height: 440px;
+    margin-right: 25px;
+}
+.sobre h2{
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5em;
+    margin: 0 25px;
+}
+
+.sobre h2 span {
+    color: #7B1D1D;
+}
+
+.sobre h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.0em;
+    margin: 10px 25px 5px;
+
+}
+.sobre p{
+    margin: 5px 25px;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: justify;
+}
+
+.sobre .site .topo div {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servico {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+.servico p{
+    width: 300px;
+    margin-bottom: 30px;
+}
+.servico .site h2 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.0em;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.servico .site .conteudoServico {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.servico .site .conteudoServico div {
+    width: 280px;
+    height: 300px;
+    padding: 10x;
+    margin: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    border: solid #EDEDED 1px;
+    transition: all 1s;
+}
+.servico .site .conteudoServico div img {
+width: 100px;
+height: 100px;
+background: red;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+margin-top: -40px;
+margin-left: 35px;
+}
+
+.servico .site .conteudoServico .ativo{      /*Quando clicar*/
+color: #643d27;
+}
+.servico .site .conteudoServico a:hover{     /*Quando passar o mouse*/
+color: #643d27;
+transition: all 0.50s ease;
+}
+.servico .site .conteudoServico h5 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.servico .site .conteudoServico p{
+    width: 260px;
+    height: auto;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: justify;
+    margin: 10px;
+}
+
+.conteudoServico div:hover{
+background: #f8f8f8;
+transition: all 0.50s ease;
+}
+.duvidas{
+padding: 100px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url(../img/BANNER2.png) 50% fixed;
+background-size: cover;
+}
+
+.duvidas p{
+width: 740px;
+color: white;
+}
+.duvidas .topo div{
+margin-left: 100px ;
+}
+.duvidas a{
+margin: 0 100px;
+font-family: "Bebas Neue", cursive;
+font-size: 15pt;
+color: white;
+display: flex;
+text-decoration: none;
+justify-content: center;
+align-items: center;
+border: solid #f8f5f0 1px;
+width: 150px;
+height: 50px;
+align-self: center;
+}
+.duvidas h4 {
+color: #cbae86;
+}
+.duvidas h2 {
+font-family: "Bebas Neue", cursive;
+font-size: 40pt;
+margin-top: 20px;
+margin-bottom: 30px;
+color: white;
+}
+.duvidas .ativo{      /*Quando clicar*/
+background: white;
+color: #262626;
+}
+.duvidas a:hover{     /*Quando passar o mouse*/
+background: white;
+color: #262626;
+transition: all 0.50s ease;
+}
+.artistas {
+width: 100%;
+display: flex;
+justify-content: center;
+text-align: center;
+padding: 100px 0;
+background: #262626;
+}
+.artistas .site h4{
+font-family: "Bebas Neue", cursive;
+color:#cbae86;
+}
+.artistas .site h2 {
+text-align: center;
+font-family: "Bebas Neue", cursive;
+font-size: 40pt;
+margin-top: 20px;
+margin-bottom: 30px;
+color: white;
+}
+.conteudoArtistas{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.conteudoArtistas div a img {
+width: 350px;
+height: 450px;
+margin-bottom: -50px;
+background: #8C5637;
+}
+.conteudoArtistas .descricao{
+background: #f8f5f0;
+width: 240px;
+padding: 30px;
+margin: 0 25px 40px 25px;
+z-index: 2;
+position: relative;
+}
+.conteudoArtistas .descricao h3 {
+font-size: 20pt;
+font-family: "Bebas Neue", cursive;
+}
+.conteudoArtistas .descricao p{
+font-size: 20pt;
+}
+.conteudoArtistas .descricao h5{
+color: #cbae86;
+font-family: "Bebas Neue", cursive;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 20pt;
+}
+.conteudoArtistas .ativo{      /*Quando clicar*/
+-webkit-filter: brightness(0.70);
+}
+.conteudoArtistas a:hover{     /*Quando passar o mouse*/
+-webkit-filter: brightness(0.70);
+transition: all 0.50s;
 }
