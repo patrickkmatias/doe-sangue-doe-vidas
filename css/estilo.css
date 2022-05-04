@@ -59,11 +59,16 @@
 }
 .wrapper h1
 {
+    text-align: center;
     font-family: 'Comfortaa', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 3.5em;
-    margin: 0 25px;
+}
+h1>span:nth-child(1)
+{
+    position: relative;
+    left: .53em;
 }
 .wrapper .red
 {

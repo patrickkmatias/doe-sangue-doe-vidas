@@ -27,7 +27,11 @@ tl.to('.wrapper',
 {
     delay: 1,
     duration: 1,
-    opacity: 0
+    opacity: 0,
+    onStart: function(){
+        document.getElementById("video").autoplay = true;
+        document.getElementById("video").load();
+    }
 })
 
 
