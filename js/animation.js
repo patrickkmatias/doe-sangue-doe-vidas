@@ -34,6 +34,24 @@ tl.to('.wrapper',
     }
 })
 
+/* animação botão tabela */
+let btn = document.getElementById('btnTabela');
+let tabela = document.getElementById('tabela');
+let fechar = document.querySelector('.fechar');
+
+btn.onclick = function(){
+    btn.classList.add('active');
+    tabela.classList.add('active');
+    fechar.classList.add('active');
+
+}
+
+fechar.onclick = function(){
+    btn.classList.remove('active');
+    tabela.classList.remove('active');
+    fechar.classList.remove('active');
+}
+
 
 /* navegação */
 

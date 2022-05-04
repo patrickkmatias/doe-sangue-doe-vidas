@@ -245,45 +245,136 @@ transition: all 0.50s ease;
 }
 /* Fim ETAPAS */
 
+/* convém aninhar tipo em etapas? */
+#tipo{
+    padding: 100px 0;
+}
+#tipo article
+{
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
 
-.duvidas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-family: "Comfortaa", cursive;
+    font-size: 1.5em;
+}
+#tipo span
+{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1em;
+    padding: 1em 1.8em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+
+    font-size: 15pt;
+
+    color: #fff;
+    cursor: pointer;
+
+    border-radius: 100px;
+    background-color: #7B1D1D;
+}
+#tabela,
+.fechar
+{   
+    width: 0;
+    height: 0;
+    transition: 1s;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+}
+#tabela.active
+{
+    width: 80vh;
+    height: 80vh;
+    top: 5%;
+    
+    display: flex;
+    justify-content: center;
+
+    background-color: red;
+    /* abaixo propriedades relevantes para animação */
+    cursor: initial;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0 150vh #00000030; /* fundo */
+    transition-property: box-shadow;
+    transition-duration: 1s;
+}
+#tabela .fechar.active
+{
+    display: block;
+    position: relative;
+    top: 100%;
+    left: 50%;
+
+    opacity: 1;
+    transform: scale(1) translateX(-50%)!important;
+}
+
+/* fim TABELA */
+
+.secaoServico {
     padding: 100px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+.secaoServico  p {
+    margin-bottom: 20px;
 
-.duvidas p{
-    width: 740px;
 }
-.duvidas a{
-    margin: 0 100px;
-    font-family: "Bebas Neue", cursive;
-    font-size: 15pt;
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    color: #fff;
-    height: 50px;
-    align-self: center;
-    border-radius: 100px;
-    background: #7B1D1D;
-}
-.duvidas h2 {
+.secaoServico  h2 {
     font-family: "Bebas Neue", cursive;
     font-size: 40pt;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
-.duvidas a:hover{     /*Quando passar o mouse*/
-    transition: all 0.50s ease;
+.secaoServico .site .topo .servicoDescricao {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
 }
-
-
-
+.secaoServico .site .topo img{
+    display: flex;
+    width: 280px;
+    height: 380px;
+    margin: 10px;
+    align-self: flex-end;
+}
+.secaoServico h3{
+    align-self: flex-end;
+    margin: 10px;
+    background: #8C5637;
+    width: 100px;
+    padding: 20px;
+    height: fit-content;
+    color: white;
+    margin-left: -150px;
+    text-align: center;
+    font-size: 50pt;
+}
+.secaoServico h3:hover{
+    background: #643d27;
+    transition: all 0.50s;
+    transform: scale(1.5);
+}
+  
 .locais {
     display: flex;
     justify-content: center;
@@ -348,55 +439,6 @@ transition: all 0.50s ease;
     background: #f8f8f8;
     transition: all 0.50s ease;
 }
-
-.secaoServico {
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-}
-.secaoServico  p {
-    margin-bottom: 20px;
-
-}
-.secaoServico  h2 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 40pt;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.secaoServico .site .topo .servicoDescricao {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 100px;
-}
-.secaoServico .site .topo img{
-    display: flex;
-    width: 280px;
-    height: 380px;
-    margin: 10px;
-    align-self: flex-end;
-}
-.secaoServico h3{
-    align-self: flex-end;
-    margin: 10px;
-    background: #8C5637;
-    width: 100px;
-    padding: 20px;
-    height: fit-content;
-    color: white;
-    margin-left: -150px;
-    text-align: center;
-    font-size: 50pt;
-}
-.secaoServico h3:hover{
-    background: #643d27;
-    transition: all 0.50s;
-    transform: scale(1.5);
-}
-  
-
 
 .direitos{
     height: 50px;
