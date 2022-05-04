@@ -164,7 +164,7 @@
 .servico .site .conteudoServico div {
     width: 280px;
     height: 300px;
-    padding: 10x;
+    padding: 10px;
     margin: 10px;
     margin-bottom: 30px;
     display: flex;
@@ -173,12 +173,12 @@
     transition: all 1s;
 }
 .servico .site .conteudoServico div img {
-width: 100px;
-height: 100px;
-background: red;
-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-margin-top: -40px;
-margin-left: 35px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    margin-top: -40px;
+    margin-left: 35px;
 }
 
 .servico .site .conteudoServico .ativo{      /*Quando clicar*/
@@ -197,7 +197,109 @@ transition: all 0.50s ease;
     margin-bottom: 10px;
 }
 .servico .site .conteudoServico p{
-    width: 260px;
+    width: fit-content;
+    height: auto;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: justify;
+}
+
+.conteudoServico div:hover{
+background: #f8f8f8;
+transition: all 0.50s ease;
+}
+.duvidas{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duvidas p{
+    width: 740px;
+}
+.duvidas a{
+    margin: 0 100px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 15pt;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    color: #fff;
+    height: 50px;
+    align-self: center;
+    border-radius: 100px;
+    background: #7B1D1D;
+}
+.duvidas h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 40pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.duvidas .ativo{      /*Quando clicar*/
+}
+.duvidas a:hover{     /*Quando passar o mouse*/
+    transition: all 0.50s ease;
+}
+
+
+
+.locais {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+.locais p{
+    width: 300px;
+    margin-bottom: 30px;
+}
+.locais .site h2 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.0em;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.locais .site .conteudoLocais {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.locais .site .conteudoLocais div {
+    width: 380px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.locais .site .conteudoLocais div img {
+    width: 380px;
+    height: 250px;
+    background: red;
+}
+
+.locais .site h5 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 20px 10px 10px 10px;
+}
+.locais .site .conteudoLocais p{
+    width: fit-content;
     height: auto;
     font-family: 'Comfortaa';
     font-style: normal;
@@ -208,117 +310,72 @@ transition: all 0.50s ease;
     margin: 10px;
 }
 
-.conteudoServico div:hover{
-background: #f8f8f8;
-transition: all 0.50s ease;
-}
-.duvidas{
-padding: 100px 0;
-display: flex;
-justify-content: center;
-align-items: center;
-background: url(../img/BANNER2.png) 50% fixed;
-background-size: cover;
+.conteudoLocais div:hover{
+    background: #f8f8f8;
+    transition: all 0.50s ease;
 }
 
-.duvidas p{
-width: 740px;
-color: white;
+.secaoServico {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
 }
-.duvidas .topo div{
-margin-left: 100px ;
+.secaoServico  p {
+    margin-bottom: 20px;
+
 }
-.duvidas a{
-margin: 0 100px;
-font-family: "Bebas Neue", cursive;
-font-size: 15pt;
-color: white;
-display: flex;
-text-decoration: none;
-justify-content: center;
-align-items: center;
-border: solid #f8f5f0 1px;
-width: 150px;
-height: 50px;
-align-self: center;
+.secaoServico  h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 40pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
-.duvidas h4 {
-color: #cbae86;
+.secaoServico .site .topo .servicoDescricao {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
 }
-.duvidas h2 {
-font-family: "Bebas Neue", cursive;
-font-size: 40pt;
-margin-top: 20px;
-margin-bottom: 30px;
-color: white;
+.secaoServico .site .topo img{
+    display: flex;
+    width: 280px;
+    height: 380px;
+    margin: 10px;
+    align-self: flex-end;
 }
-.duvidas .ativo{      /*Quando clicar*/
-background: white;
-color: #262626;
+.secaoServico h3{
+    align-self: flex-end;
+    margin: 10px;
+    background: #8C5637;
+    width: 100px;
+    padding: 20px;
+    height: fit-content;
+    color: white;
+    margin-left: -150px;
+    text-align: center;
+    font-size: 50pt;
 }
-.duvidas a:hover{     /*Quando passar o mouse*/
-background: white;
-color: #262626;
-transition: all 0.50s ease;
+.secaoServico h3:hover{
+    background: #643d27;
+    transition: all 0.50s;
+    transform: scale(1.5);
 }
-.artistas {
-width: 100%;
-display: flex;
-justify-content: center;
-text-align: center;
-padding: 100px 0;
-background: #262626;
+  
+
+
+.direitos{
+    height: 50px;
+    width: 100%;
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.artistas .site h4{
-font-family: "Bebas Neue", cursive;
-color:#cbae86;
+.direitos p{
+    font-size: 10pt;
+    color: white;
 }
-.artistas .site h2 {
-text-align: center;
-font-family: "Bebas Neue", cursive;
-font-size: 40pt;
-margin-top: 20px;
-margin-bottom: 30px;
-color: white;
-}
-.conteudoArtistas{
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-.conteudoArtistas div a img {
-width: 350px;
-height: 450px;
-margin-bottom: -50px;
-background: #8C5637;
-}
-.conteudoArtistas .descricao{
-background: #f8f5f0;
-width: 240px;
-padding: 30px;
-margin: 0 25px 40px 25px;
-z-index: 2;
-position: relative;
-}
-.conteudoArtistas .descricao h3 {
-font-size: 20pt;
-font-family: "Bebas Neue", cursive;
-}
-.conteudoArtistas .descricao p{
-font-size: 20pt;
-}
-.conteudoArtistas .descricao h5{
-color: #cbae86;
-font-family: "Bebas Neue", cursive;
-margin-top: 20px;
-margin-bottom: 20px;
-font-size: 20pt;
-}
-.conteudoArtistas .ativo{      /*Quando clicar*/
--webkit-filter: brightness(0.70);
-}
-.conteudoArtistas a:hover{     /*Quando passar o mouse*/
--webkit-filter: brightness(0.70);
-transition: all 0.50s;
+.direitos span{
+    color: #c57474;
 }
