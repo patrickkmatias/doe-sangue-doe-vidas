@@ -107,6 +107,8 @@
     display: flex; /*Colocar os itens uns ao lado dos outros*/
     justify-content: space-between; /*Espaçamento central entre os itens*/
 }
+
+/* Começo SOBRE - O QUE É */
 .sobre {
     padding: 100px 0 0 0;
     display: flex;
@@ -153,17 +155,20 @@
     flex-direction: column;
     justify-content: center;
 }
+/* Fim SOBRE - O QUE É */
 
-.servico {
+/* Começo COMO FUNCIONA */
+#etapas {
     display: flex;
     justify-content: center;
     padding: 100px 0;
+    margin: 0 auto;
 }
-.servico p{
+#etapas p{
     width: 300px;
     margin-bottom: 30px;
 }
-.servico .site h2 {
+#etapas h2 {
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -172,13 +177,13 @@
     text-align: center;
 }
 
-.servico .site .conteudoServico {
+#etapas #conteudoEtapas {
     width: 100%;
     display: flex;
     justify-content: space-between;
     justify-content: center;
 }
-.servico .site .conteudoServico div {
+#etapas #conteudoEtapas div {
     width: 280px;
     height: 300px;
     padding: 10px;
@@ -189,7 +194,7 @@
     border: solid #EDEDED 1px;
     transition: all 1s;
 }
-.servico .site .conteudoServico div img {
+#etapas #conteudoEtapas div img {
     width: 100px;
     height: 100px;
     background: red;
@@ -198,14 +203,18 @@
     margin-left: 35px;
 }
 
-.servico .site .conteudoServico .ativo{      /*Quando clicar*/
+
+
+#etapas #conteudoEtapas .ativo{  
 color: #643d27;
 }
-.servico .site .conteudoServico a:hover{     /*Quando passar o mouse*/
+
+#etapas #conteudoEtapas a:hover{
 color: #643d27;
 transition: all 0.50s ease;
 }
-.servico .site .conteudoServico h5 {
+
+#etapas #conteudoEtapas h5 {
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -213,7 +222,8 @@ transition: all 0.50s ease;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.servico .site .conteudoServico p{
+
+#etapas #conteudoEtapas p{
     width: fit-content;
     height: auto;
     font-family: 'Comfortaa';
@@ -224,10 +234,13 @@ transition: all 0.50s ease;
     text-align: justify;
 }
 
-.conteudoServico div:hover{
-background: #f8f8f8;
-transition: all 0.50s ease;
+#conteudoEtapas div:hover{
+    background: #f8f8f8;
+    transition: all 0.50s ease;
 }
+/* Fim ETAPAS */
+
+
 .duvidas{
     padding: 100px 0;
     display: flex;
@@ -259,8 +272,7 @@ transition: all 0.50s ease;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.duvidas .ativo{      /*Quando clicar*/
-}
+
 .duvidas a:hover{     /*Quando passar o mouse*/
     transition: all 0.50s ease;
 }

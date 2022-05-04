@@ -1,5 +1,7 @@
 /* arquivo principal de animações em js */
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
 let wrapper = document.querySelector('.wrapper');
 
 let tl = gsap.timeline({
@@ -11,6 +13,7 @@ let tl = gsap.timeline({
     /* document.getElementById("myH1").setAttribute <- adicionar atributo autoplay ao video ao terminar */
 });
 
+/* animação de entrada ao site - .wrapper (comente div.wrapper para desativar) */
 tl.from('.wrapper span',
 {
     opacity: 0,
@@ -27,4 +30,43 @@ tl.to('.wrapper',
     opacity: 0
 })
 
+
+/* navegação */
+
+function oque(){
+    gsap.to(window, {
+        duration: 2, 
+        scrollTo: {
+            y: '.sobre', 
+            offsetY: (document.querySelector('.sobre').offsetHeight * 0.3)
+        }
+    });
+};
+
+function etapas(){
+    gsap.to(window, {
+        duration: 2, 
+        scrollTo: {
+            y: '#etapas', 
+            offsetY: (document.querySelector('#etapas').offsetHeight * 0.2)
+        },
+    });
+};
+
+function doadores(){
+    gsap.to(window, {
+        duration: 2, 
+        scrollTo: {
+            y: '#doadores', 
+            offsetY: (document.querySelector('#doadores').offsetHeight * 0.2)
+        },
+    });
+};
+
+function local(){
+    gsap.to(window, {
+        duration: 2, 
+        scrollTo: '#local'
+    });
+};
 
