@@ -39,7 +39,8 @@ tl.to('.wrapper',
 
 function oque(){
     gsap.to(window, {
-        duration: 2, 
+        duration: 2,
+        ease: 'power1.inOut', 
         scrollTo: {
             y: '.sobre', 
             offsetY: (document.querySelector('.sobre').offsetHeight * 0.3)
@@ -49,7 +50,8 @@ function oque(){
 
 function etapas(){
     gsap.to(window, {
-        duration: 2, 
+        duration: 2,
+        ease: 'power1.inOut', 
         scrollTo: {
             y: '#etapas', 
             offsetY: (document.querySelector('#etapas').offsetHeight * 0.2)
@@ -59,7 +61,8 @@ function etapas(){
 
 function doadores(){
     gsap.to(window, {
-        duration: 2, 
+        duration: 2,
+        ease: 'power1.inOut', 
         scrollTo: {
             y: '#doadores', 
             offsetY: (document.querySelector('#doadores').offsetHeight * 0.2)
@@ -69,7 +72,8 @@ function doadores(){
 
 function local(){
     gsap.to(window, {
-        duration: 2, 
+        duration: 2,
+        ease: 'power1.inOut', 
         scrollTo: '#local'
     });
 };
