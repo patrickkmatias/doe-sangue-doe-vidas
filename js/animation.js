@@ -4,9 +4,9 @@ let wrapper = document.querySelector('.wrapper');
 
 let tl = gsap.timeline({
     delay: 1,
-    /* onComplete: function(){
+    onComplete: function(){
         wrapper.classList.add('active');
-    } z index diminuir ao terminar */
+    }
 
     /* document.getElementById("myH1").setAttribute <- adicionar atributo autoplay ao video ao terminar */
 });

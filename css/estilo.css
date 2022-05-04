@@ -55,7 +55,7 @@
 }
 .wrapper.active
 {
-    z-index: -1;
+    z-index: -1 !important;
 }
 .wrapper h1
 {
