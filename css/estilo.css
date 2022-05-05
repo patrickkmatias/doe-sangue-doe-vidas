@@ -168,7 +168,7 @@ h1>span:nth-child(1)
     justify-content: center;
     padding-top: 100px;
     margin: 0 auto;
-    background: #fcf7ff;
+    background:#f7f7f7;
 }
 #etapas p{
     width: 300px;
@@ -203,7 +203,7 @@ h1>span:nth-child(1)
 #etapas #conteudoEtapas div img {
     width: 100px;
     height: 100px;
-    background: red;
+    background: #fff;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     margin-top: -40px;
     margin-left: 35px;
@@ -237,7 +237,7 @@ h1>span:nth-child(1)
 
 /* convém aninhar tipo em etapas? */
 #tipo{
-    background:#fcf7ff;
+    background:#f7f7f7;
     padding-bottom: 100px;
 }
 
@@ -376,7 +376,7 @@ h1>span:nth-child(1)
     display: flex;
     justify-content: center;
     padding-top: 100px;
-    background: #fcf7ff;
+    background:#f7f7f7;
 }
 .locais p{
     width: 350px;
@@ -440,7 +440,7 @@ h1>span:nth-child(1)
 
 #mais{
     padding-bottom: 100px;
-    background: #fcf7ff;
+    background:#f7f7f7;
 }
 
 #mais article
