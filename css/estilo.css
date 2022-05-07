@@ -123,6 +123,7 @@ h1>span:nth-child(1)
     width: 630px;
     height: 440px;
     margin-right: 25px;
+
 }
 .sobre h2{
     font-family: 'Comfortaa', sans-serif;
@@ -140,8 +141,8 @@ h1>span:nth-child(1)
     font-family: 'Comfortaa', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.0em;
-    margin: 10px 25px 5px;
+    font-size: 3.3em;
+    margin: 10px 0 5px 157px;
 
 }
 .sobre p{
@@ -150,7 +151,7 @@ h1>span:nth-child(1)
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 130%;
     text-align: justify;
 }
 
@@ -225,7 +226,7 @@ h1>span:nth-child(1)
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 120%;
+    line-height: 130%;
     text-align: justify;
 }
 
@@ -274,6 +275,10 @@ h1>span:nth-child(1)
 
     border-radius: 100px;
     background-color: #7B1D1D;
+}
+#tipo p{
+    text-align: justify;
+    line-height: 130%;
 }
 #tabela,
 .fechar
@@ -329,13 +334,16 @@ h1>span:nth-child(1)
     font-size: 1.5em;
 }
 #doadores p {
-    margin-bottom: 20px;
     width: 600px;
+    margin: 10px 20px 20px 0;
+    text-align: justify;
+    line-height: 130%;
 }
 #doadores h2 {
     font-size: 40pt;
     margin-top: 20px;
     margin-bottom: 30px;
+    text-align: center;
 }
 #doadores article .doadoresTxt {
     display: flex;
@@ -414,7 +422,6 @@ h1>span:nth-child(1)
     height: 200px;
     background: red;
 }
-
 .locais .site h5 {
     font-family: 'Comfortaa';
     font-style: normal;
@@ -429,7 +436,7 @@ h1>span:nth-child(1)
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 120%;
+    line-height: 130%;
     text-align: justify;
     margin: 10px;
 }
@@ -477,6 +484,10 @@ h1>span:nth-child(1)
     border-radius: 100px;
     background-color: #7B1D1D;
 }
+#mais p{
+    text-align: justify;
+    line-height: 130%;
+}
 #tabela,
 .fechar
 {   
@@ -515,12 +526,69 @@ h1>span:nth-child(1)
     position: relative;
     top: 100%;
     left: 50%;
-
     opacity: 1;
     transform: scale(1) translateX(-50%)!important;
 }
-
-
+.palestra{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+.palestra h2{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.0em;
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.palestra .conteudoPalestra{
+    display: flex;
+    justify-content: space-between;
+}
+.palestra .contato{
+    width: 420px;
+}
+.palestra .contato .blocos{
+    width: 420px;
+    height: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+.palestra .contato .blocos .icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.palestra .contato .blocos .desc h5{
+    font-size: 15px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 10px;
+}
+.palestra span{
+    color: #7B1D1D;
+}
+.palestra .contato .blocos .desc p{
+    margin-top: 10px;
+    width: 320px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 150%;
+}
+.palestra .palestraImg{
+    width: 590px;
+    height: 350px;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .rodape
 {
     width: 100%;
