@@ -40,16 +40,29 @@ let tabela = document.getElementById('tabela');
 let fechar = document.querySelector('.fechar');
 
 btn.onclick = function(){
-    btn.classList.add('active');
-    tabela.classList.add('active');
-    fechar.classList.add('active');
+    
+    gsap.to('#tabela', {
+        transform: 'scale(1) ' + 'translateX(-50%)',
+        duration: 1
+    })
+    gsap.to('.fechar', {
+        opacity: '1',
+        delay: 0.8,
+        duration: 0.2
+    })
 
 }
 
 fechar.onclick = function(){
-    btn.classList.remove('active');
-    tabela.classList.remove('active');
-    fechar.classList.remove('active');
+    
+    gsap.to('#tabela', {
+        transform: 'scale(0) ' + 'translateX(-50%)',
+        duration: 1
+    })
+    gsap.to('.fechar', {
+        opacity: '0',
+        duration: 0.2
+    })
 }
 
 
@@ -61,7 +74,6 @@ function oque(){
         ease: 'power1.inOut', 
         scrollTo: {
             y: '.sobre', 
-            offsetY: (document.querySelector('.sobre').offsetHeight * 0.3)
         }
     });
 };
@@ -72,7 +84,6 @@ function etapas(){
         ease: 'power1.inOut', 
         scrollTo: {
             y: '#etapas', 
-            offsetY: (document.querySelector('#etapas').offsetHeight * 0.2)
         },
     });
 };
@@ -83,7 +94,6 @@ function doadores(){
         ease: 'power1.inOut', 
         scrollTo: {
             y: '#doadores', 
-            offsetY: (document.querySelector('#doadores').offsetHeight * 0.2)
         },
     });
 };
