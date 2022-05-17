@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,600;8..144,700;8..144,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap');
 
 /*  font-family: 'Comfortaa', cursive;
     font-family: 'Roboto Flex', sans-serif;
@@ -18,7 +20,8 @@ p{font-weight: 200;}
     position: absolute;
     margin: 0 auto;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
 }
 #topo nav
 {
@@ -40,13 +43,13 @@ p{font-weight: 200;}
 }
 #topo a:hover
 {
-    color: tomato;
+    color: #34cfaa;
 }
 #logo
 {
     width: 300px;
     height: 200px;
-    background-color: #ff000070;
+    background-color: transparent;
 }
 #banner
 {
@@ -88,10 +91,10 @@ h1>span:nth-child(1)
     position: relative;
     left: .53em;
 }
-.wrapper .red
+.wrapper .green
 {
     display: inline;
-    color: #ff0000;
+    color: #36dbb4;
 }
 
 .wrapperVideo
@@ -104,9 +107,38 @@ h1>span:nth-child(1)
     top: 50%; left: 0 ;
     transform: translateY(-50%);
 
-    border-radius: 8vw ;
+    border-radius: 8vw;
     overflow: hidden;
     z-index: -2;
+}
+.neumorphism /* efeito sombreado */
+{
+    
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%; left: 50% ;
+    transform: translate(-50%, -50%);
+    z-index: -3;
+
+    content: '';
+    overflow: visible;
+    border-radius: 8vw;
+    background: linear-gradient(145deg, #38ddb6, #2fba99);
+    box-shadow:  20px 20px 60px #2cb091,
+                -20px -20px 60px #3ceec4;
+}
+#banner>a
+{
+    position: absolute;
+    top: 88vh; left: 50%;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    z-index: 10;
+
+    font-family: 'Nunito', sans-serif;
+    color: #b6eee1;
+    text-decoration: none;
 }
 #video
 {
@@ -118,26 +150,63 @@ h1>span:nth-child(1)
 
     z-index: -1;
 }
+.wrapperVideo::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+
+    opacity: .2;
+    background-color: #000;
+}
 #slogan
 {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    color: white;
-    font-family: 'Roboto Flex';
-    font-weight: 600;
-    font-size: 1em;
 }
 #slogan p
 {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    top: 0; left: 0;
     z-index: 100;
     opacity: 0;
+
+    color: white;
+    font-family: 'Nunito';
+    font-weight: 500 !important;
+    font-size: 2em;
+    white-space: nowrap;
+}
+#slogan span
+{
+    position: relative;
+    top: 0; left: 0;
+    font-weight: 700;
+}
+#slogan .sublime
+{
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 95%; left: 0;
+
+    border-radius: 1px;
+    background-color: #C4C4C4;
+}
+#slogan .pp1{top:1em;}
+#slogan .pp2{color: #b6eee1;}
+#slogan .pp3
+{
+    top:-1em;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
 }
 .bkgBanner
 {
@@ -154,9 +223,9 @@ h1>span:nth-child(1)
 #superexposed
 {
     position: absolute;
-    top: -19vw; left: -100%;
+    top: -21vw; left: -100%;
     transform: translateX(60%) scale(.3);
-    z-index: 1500;
+    z-index: 998;
 
     
 
@@ -193,15 +262,34 @@ h1>span:nth-child(1)
 
 /* Começo SOBRE - O QUE É */
 .sobre {
+    margin: 100px 0;
     padding: 100px 0;
     display: flex;
     justify-content: center;
+}
+.sobre .oProjeto
+{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.3fr 1fr 0.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". ."
+        ". ."
+        "blob blob"; 
 }
 .sobre img {
     width: 630px;
     height: 440px;
     margin-right: 25px;
 
+    position: relative;
+    top: 5%; left: 0;
+
+    border-radius: 0 45% 45% 0;
+    background: linear-gradient(145deg, #c3fff2, #a4d6cb);
+    box-shadow:  20px 20px 60px #93c1b7,
+                -20px -20px 60px #d9ffff;
 }
 .sobre h2{
     font-family: 'Comfortaa', sans-serif;
@@ -212,7 +300,7 @@ h1>span:nth-child(1)
 }
 
 .sobre h2 span {
-    color: #7B1D1D;
+    color: #36dbb4;
 }
 
 .sobre h3 {
@@ -223,21 +311,44 @@ h1>span:nth-child(1)
     margin: 10px 0 5px 157px;
 
 }
+
 .sobre p{
-    margin: 5px 25px;
+    padding: 12% 5% 0 5%;
     font-family: 'Roboto Flex', sans-serif;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 130%;
+    letter-spacing: 1px;
     text-align: justify;
 }
-
-.sobre .site .topo div {
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.oProjeto div>p
+{
+    font-size: 2em;
 }
+.oProjeto stronger
+{
+    font-weight: 400;
+}
+.oProjeto .blob
+{
+    grid-area: blob;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.blob .b1, .b2, .b3
+{
+    width: clamp(50px, 100%, 250px);
+    height: clamp(50px, 100%, 250px);
+}
+.blob .b1
+{
+    position: relative;
+    top: -15%; left: 5%;
+}
+
 /* Fim SOBRE - O QUE É */
 
 /* Começo COMO FUNCIONA */
@@ -351,7 +462,7 @@ h1>span:nth-child(1)
 
     border-radius: 100px;
 
-    background-color: #7B1D1D;
+    background-color: #31cca7;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -474,7 +585,7 @@ tr:nth-child(odd) {
     height: 380px;
     margin: 10px;
     align-self: flex-end;
-    background: #7B1D1D;
+    background: #31cca7;
 }
 #doadores .doadoresTxt span
 {
@@ -494,7 +605,7 @@ tr:nth-child(odd) {
     cursor: pointer;
 
     border-radius: 100px;
-    background-color: #7B1D1D;
+    background-color: #31cca7;
 }
 
 
@@ -574,7 +685,7 @@ tr:nth-child(odd) {
 } */
 
 .conteudoLocais div h5:hover{
-    color: #7B1D1D;
+    color: #31cca7;
 }
 
 
@@ -615,7 +726,7 @@ tr:nth-child(odd) {
     cursor: pointer;
 
     border-radius: 100px;
-    background-color: #7B1D1D;
+    background-color: #31cca7;
 }
 #mais p{
     text-align: justify;
@@ -671,7 +782,7 @@ tr:nth-child(odd) {
     margin-bottom: 10px;
 }
 .palestra span{
-    color: #7B1D1D;
+    color: #31cca7;
 }
 .palestra .contato .blocos .desc p{
     margin-top: 10px;
@@ -698,7 +809,7 @@ tr:nth-child(odd) {
     height: 200px;
     display: flex;
     justify-content: center;
-    background: #300a0a;
+    background: #1b7560;
     padding: 100px 0;
 }
 .rodape nav
@@ -718,12 +829,12 @@ tr:nth-child(odd) {
 }
 .rodape a:hover
 {
-    color: tomato;
+    color: #b6eee1;
 }
 .direitos{
     height: 50px;
     width: 100%;
-    background: #300a0a;
+    background: #0b332a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -735,5 +846,5 @@ tr:nth-child(odd) {
     color: white;
 }
 .direitos span{
-    color: tomato;
+    color: #b6eee1;
 }
