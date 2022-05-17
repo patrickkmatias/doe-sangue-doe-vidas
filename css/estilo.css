@@ -326,14 +326,14 @@ h1>span:nth-child(1)
     line-height: 130%;
     font-family: 'Roboto Flex', sans-serif;
 }
-/* #tabela,
+#tabela,
 .fechar
 {   
     transition: 1s;
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scale(0);
-} */
+}
 #tabela
 {
     width: 80vh;
@@ -350,7 +350,6 @@ h1>span:nth-child(1)
     position: fixed;
     z-index: 999;
     left: 50%;
-    transform: translateX(-50%) scale(1);
     box-shadow: 0 0 0 150vh #00000030; /* fundo */
     transition-property: box-shadow;
     transition-duration: 1s;
@@ -364,7 +363,7 @@ h1>span:nth-child(1)
     transform: scale(1) translateX(-50%)!important;
 }
 
-/*table{
+table{
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -400,7 +399,7 @@ td, th{
 tr:nth-child(odd) {
     background: lightgreen;
   }
-*/
+
 
 /* fim TABELA */
 
