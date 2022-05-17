@@ -1,0 +1,76 @@
+.mouse {
+    position: absolute;
+    top: -350%;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #b6eee1;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  .mouse::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #b6eee1;
+    border-radius: 100%;
+    -webkit-animation: sdb10 4s infinite;
+    animation: sdb10 3s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+.rainbow{
+  animation: rainbow 3s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  0%, 100%
+  {color: #b6eee1;}
+  20%
+  {color: #34cfaa;}
+  40%
+  {color: #9e34cf;}
+  60%
+  {color: #ffda34;}
+  80%
+  {color: #cf3449;}
+  
+}

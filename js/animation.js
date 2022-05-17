@@ -18,12 +18,12 @@ tl1.from('.wrapper span',
     scale: 1,
     fontSize: '0.9em',
 
-    duration: 1,
+    duration: 0.8,
     stagger: 1
 })
 tl1.to('.wrapper',
 {
-    delay: 1,
+    delay: 0.8,
     duration: 1,
     opacity: 0,
     onStart: function(){
@@ -34,20 +34,64 @@ tl1.to('.wrapper',
 
 /* animação slogan */
 let pp1 = document.querySelector('.pp1');
+let pp2 = document.querySelector('.pp2');
+let pp3 = document.querySelector('.pp3');
 let tl2 = gsap.timeline({
-    /* delay: 4, */
+    delay: 5,
 });
 
 
-tl2.to('#slogan .pp1', {
+tl2.to('.pp1', {
     opacity: 1,
-    stagger: 1,
+    duration: 5,
     onStart: function(){
-        pp1.classList.add("animate__fadeIn")
+        pp1.classList.add("animate__fadeInUp")
+
+        gsap.to('.sublime',{
+            width: '100%',
+            delay: 2,
+            ease: 'power4.inOut'
+        })
     },
     onComplete: function(){
-        pp1.classList.add("animate__fadeOut")
+        pp1.classList.add("animate__fadeOutDown")
     }
+})
+
+tl2.to('.pp2', {
+    opacity: 1,
+    duration: 5,
+    onStart: function(){
+        pp2.classList.add("animate__fadeInUp")
+
+        gsap.to('.pp2 span',{
+            delay: 1,
+            onStart: function(){
+                document.querySelector('.colorful').classList.add("rainbow")
+            }
+        })
+    },
+    onComplete: function(){
+        pp2.classList.add("animate__fadeOutDown")
+    }
+})
+
+tl2.to('.pp3', {
+    opacity: 1,
+    duration: 2,
+    onStart: function(){
+        pp3.classList.add("animate__fadeInUp")
+    },
+    onComplete: function(){
+        gsap.to('#topo',{transform: 'translateX(-50%) ' + 'scale(1)'})
+        gsap.to('#banner>a',{transform: 'translateX(-50%) ' + 'scale(1)'})
+    }
+})
+gsap.set('#topo',{y:-300})
+tl2.to(['#topo', '#banner>a'],{
+    delay: .5,
+    duration: 2,
+    opacity: 1
 })
 
 
