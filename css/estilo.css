@@ -54,6 +54,7 @@ p{font-weight: 200;}
 {
     width: 100%;
     height: 100vh;
+    overflow: visible;
 }
 #banner .wrapper
 {
@@ -125,6 +126,18 @@ h1>span:nth-child(1)
     position: absolute;
     top: 0; left: 0;
     z-index: -10;
+}
+.bkgBanner img:nth-child(1)
+{
+    position: absolute;
+    top: 0; left: 0;
+    transform: scale(.5);
+}
+.bkgBanner img:nth-child(2)
+{
+    width: 100%;
+    height: 100%;
+
 }
 
 
@@ -520,43 +533,7 @@ h1>span:nth-child(1)
     line-height: 130%;
     font-family: 'Roboto Flex', sans-serif;
 }
-#tabela,
-.fechar
-{   
-    transition: 1s;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scale(0);
-}
-#tabela
-{
-    width: 80vh;
-    height: 80vh;
-    top: 5%;
-    
-    display: flex;
-    justify-content: center;
 
-    background-color: red;
-    /* abaixo propriedades relevantes para animação */
-    cursor: initial;
-    position: fixed;
-    z-index: 999;
-    left: 50%;
-    transform: translateX(-50%) scale(0);
-    box-shadow: 0 0 0 150vh #00000030; /* fundo */
-    transition-property: box-shadow;
-    transition-duration: 1s;
-}
-#tabela .fechar
-{
-    display: block;
-    position: relative;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%) scale(1)!important;
-    opacity: 0;
-}
 .palestra{
     display: flex;
     justify-content: center;
