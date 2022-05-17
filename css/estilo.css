@@ -343,7 +343,7 @@ h1>span:nth-child(1)
     display: flex;
     justify-content: center;
 
-    background-color: red;
+    background-color: black;
 
     /* abaixo propriedades relevantes para animação */
     cursor: initial;
@@ -363,6 +363,44 @@ h1>span:nth-child(1)
     left: 50%;
     transform: scale(1) translateX(-50%)!important;
 }
+
+/*table{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0 0;
+}
+tr{
+    height: 80px;
+    width: 285px;
+}
+th{
+    background: white;
+}
+
+
+#bordaT01{
+    border-radius: 20px 0 0 0;
+}
+#bordaT02{
+    border-radius: 0 20px 0 0;
+}
+
+  
+td, th{
+
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    width: 250px;
+    padding: 30px 15px 15px;
+}
+
+tr:nth-child(odd) {
+    background: lightgreen;
+  }
+*/
 
 /* fim TABELA */
 
