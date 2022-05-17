@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,600;8..144,700;8..144,800&display=swap');
 
 /*  font-family: 'Comfortaa', cursive;
     font-family: 'Roboto Flex', sans-serif;
@@ -54,7 +52,8 @@ p{font-weight: 200;}
 {
     width: 100%;
     height: 100vh;
-    overflow: visible;
+    overflow: hidden;
+    overflow-x: hidden;
 }
 #banner .wrapper
 {
@@ -105,7 +104,7 @@ h1>span:nth-child(1)
     top: 50%; left: 0 ;
     transform: translateY(-50%);
 
-    border-radius: 8vw;
+    border-radius: 8vw ;
     overflow: hidden;
     z-index: -2;
 }
@@ -119,24 +118,56 @@ h1>span:nth-child(1)
 
     z-index: -1;
 }
-.bkgBanner
-{
-    width: 100vw !important;
-    height: auto;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -10;
-}
-.bkgBanner img:nth-child(1)
-{
-    position: absolute;
-    top: 0; left: 0;
-    transform: scale(.5);
-}
-.bkgBanner img:nth-child(2)
+#slogan
 {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: 'Roboto Flex';
+    font-weight: 600;
+    font-size: 1em;
+}
+#slogan p
+{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+    opacity: 0;
+}
+.bkgBanner
+{
+    width: 100% !important;
+    height: auto;
+    position: absolute;
+    top: -20%; left: 0;
+    z-index: -10;
+
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+#superexposed
+{
+    position: absolute;
+    top: -19vw; left: -100%;
+    transform: translateX(60%) scale(.3);
+    z-index: 1500;
+
+    
+
+}
+.bkgBanner img:nth-child(2)
+{
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -3;
 
 }
 
@@ -315,12 +346,15 @@ h1>span:nth-child(1)
 
     font-size: 15pt;
 
-    color: #fff;
+    color: white;
     cursor: pointer;
 
     border-radius: 100px;
+
     background-color: #7B1D1D;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
+
 #tipo p{
     text-align: justify;
     line-height: 130%;
@@ -336,14 +370,14 @@ h1>span:nth-child(1)
 }
 #tabela
 {
-    width: 80vh;
+    border-radius: 20px 20px 0 0;
     height: 80vh;
     top: 5%;
     
     display: flex;
     justify-content: center;
 
-    background-color: black;
+    background-color: transparent;
 
     /* abaixo propriedades relevantes para animação */
     cursor: initial;
@@ -359,7 +393,7 @@ h1>span:nth-child(1)
     display: block;
     position: relative;
     top: 100%;
-    left: 50%;
+    left: 40%;
     transform: scale(1) translateX(-50%)!important;
 }
 
@@ -369,8 +403,10 @@ table{
     font-weight: 400;
     font-size: 1em;
     text-align: center;
+    border-collapse: collapse;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px 20px 0 0;
+    margin-right: -160px;
 }
 tr{
     height: 80px;
@@ -393,11 +429,14 @@ td, th{
 
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     width: 250px;
-    padding: 30px 15px 15px;
+    padding: 31px 15px 15px;
 }
+tr:nth-child(even) {
+    background: white;
+  }
 
 tr:nth-child(odd) {
-    background: lightgreen;
+    background: #f2f2f2;
   }
 
 
@@ -499,7 +538,8 @@ tr:nth-child(odd) {
 .locais .site .conteudoLocais div img {
     width: 350px;
     height: 200px;
-    background: red;
+    background: black;
+    transition: all 1s;
 }
 .locais .site h5 {
     font-family: 'Comfortaa';
@@ -508,6 +548,8 @@ tr:nth-child(odd) {
     font-size: 1.3em;
     margin: 20px 10px 10px 10px;
     height: 45px;
+    transition: all 1s;
+    color: black;
 }
 .locais .site .conteudoLocais p{
     width: fit-content;
@@ -520,11 +562,21 @@ tr:nth-child(odd) {
     text-align: justify;
     margin: 10px;
     height: 110px;
+    color: black;
 }
 
 .conteudoLocais div:hover{
-    box-shadow: 1px 1px 30px 1px rgba(36, 36, 36, 0.137);
+    box-shadow: 1px 1px 20px 1px rgba(36, 36, 36, 0.137);
 }
+
+/* .conteudoLocais div img:hover{
+    filter: grayscale(80%);
+} */
+
+.conteudoLocais div h5:hover{
+    color: #7B1D1D;
+}
+
 
 #mais{
     padding-bottom: 100px;
@@ -668,7 +720,6 @@ tr:nth-child(odd) {
 {
     color: tomato;
 }
-
 .direitos{
     height: 50px;
     width: 100%;

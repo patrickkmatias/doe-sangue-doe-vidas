@@ -4,17 +4,15 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 let wrapper = document.querySelector('.wrapper');
 
-let tl = gsap.timeline({
+let tl1 = gsap.timeline({
     delay: 1,
     onComplete: function(){
         wrapper.classList.add('active');
     }
-
-    /* document.getElementById("myH1").setAttribute <- adicionar atributo autoplay ao video ao terminar */
 });
 
 /* animação de entrada ao site - .wrapper (comente div.wrapper para desativar) */
-tl.from('.wrapper span',
+tl1.from('.wrapper span',
 {
     opacity: 0,
     scale: 1,
@@ -23,7 +21,7 @@ tl.from('.wrapper span',
     duration: 1,
     stagger: 1
 })
-tl.to('.wrapper',
+tl1.to('.wrapper',
 {
     delay: 1,
     duration: 1,
@@ -33,6 +31,25 @@ tl.to('.wrapper',
         document.getElementById("video").load();
     }
 })
+
+/* animação slogan */
+let pp1 = document.querySelector('.pp1');
+let tl2 = gsap.timeline({
+    /* delay: 4, */
+});
+
+
+tl2.to('#slogan .pp1', {
+    opacity: 1,
+    stagger: 1,
+    onStart: function(){
+        pp1.classList.add("animate__fadeIn")
+    },
+    onComplete: function(){
+        pp1.classList.add("animate__fadeOut")
+    }
+})
+
 
 /* animação botão tabela */
 let btn = document.getElementById('btnTabela');

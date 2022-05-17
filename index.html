@@ -8,6 +8,7 @@
     <title>Doe Sangue Doe Vidas</title>
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/animation.js">
 
@@ -31,13 +32,20 @@
                     <span>Doe <div class="red">Sangue</div></span> <br> 
                     <span>Doe <div class="red">Vidas</div></span></h1>
             </div> ANIMAÇÃO DE ENTRADA -->
-            <div class="wrapperVideo">
+            <section class="wrapperVideo">
                 <video muted loop id="video">
                     <source src="img/bannerDoe.mp4" type="video/mp4">
                 </video>
-            </div>
+                <article id="slogan">
+                    <p class="pp1 animate__animated animate__delay-1s">Você ja pensou em ter o poder de salvar vidas?</p>
+                    <p class="pp2 animate__animated">E se eu disser que você tem este poder em mãos?</p>
+                    <p class="pp3 animate__animated">Doe Sangue, Doe Vida</p>
+                </article>
+            </section>
+
+            <img id="superexposed" src="img/svg/superexposed.svg" alt="Fundo do banner">
+
             <div class="bkgBanner">
-                <img src="img/svg/superexposed.svg" alt="Fundo do banner">
                 <img src="img/svg/wavesbkg.svg" alt="Fundo do banner">
             </div>
         </section>
@@ -70,7 +78,7 @@
                     <div>
                         <img src="img/etapa2-icon.svg" alt="Etapa2">
                         <h5>Triagem</h5>
-                        <p>No processo de triagem, o doador é orientado a responder um questionário sobre sua saúde, a fim de avaliar se está apto para realizar a doação. Com base nos resultados do questionário será realizado o teste de hematócrito e verificado os sinais vitais. Se o doador estiver apto para doar, assinará um termo de consentimento e será encaminhado para uma sala de coleta.</p>
+                        <p>O doador responde um questionário sobre sua saúde, a fim de avaliar se está apto para à doação. Com base nos resultados será realizado alguns testes. Se o doador estiver apto para doar, assinará um termo de consentimento para poder doar.</p>
                     </div>
                     <div>
                         <img src="img/etapa3-icon.svg" alt="Etapa3">
@@ -91,7 +99,7 @@
         <section id="tipo">
             <article class="site">
                     <p>E após? Depois da doação, são feitos testes sorológicos para categorizar doenças transmissíveis e tipagem sanguínea. Uma vez aprovado, o sangue é separado em 4 componentes: plaquetas, glóbulos vermelhos, plasma e crioprecipitado. Dois dias após, alguém já poderá utilizá-lo. Aproximadamente uma semana depois da sua doação já é possível retirar a carteirinha de doador com os resultados dos exames diretamente no Banco de Sangue.</p>
-                    <span id="btnTabela">Quem doa para quem</span>
+                    <span id="btnTabela">Quem doa para quem?</span>
                     <div id="tabela">
                         <table>
                             <thead>
@@ -171,43 +179,67 @@
                 <h2>Onde doar?</h2>
                 <div class="conteudoLocais">
                     <div>
-                        <img src="img/hp01.png" alt="Local01">
-                        <h5>Hospital Municipal Alípio Correa Neto</h5>
+                        <a href="https://goo.gl/maps/NjxNwpQfjE6uiUdn7" target="_blank" style="text-decoration:none">
+                            <img id="locais" src="img/hp01.png" alt="Local01">
+                        </a>
+                        <a href="https://goo.gl/maps/NjxNwpQfjE6uiUdn7" target="_blank" style="text-decoration:none">
+                            <h5>Hospital Municipal Alípio Correa Neto</h5>
+                        </a>
                         <p>Alameda Rodrigo de Brum, 1989 - Ermelino Matarazzo, São Paulo - SP<br>
                             CEP: 03807-230<br>
                             Tel: (11) 2545-4652               
                     </div>
                     <div>
-                        <img src="img/hp02.png" alt="Local02">
-                        <h5>Hospital Municipal Dr. Carmino Caricchio</h5>
+                        <a href="https://goo.gl/maps/B3yzqh8WKjiGVKjN6" target="_blank" style="text-decoration:none">
+                            <img src="img/hp02.png" alt="Local02">
+                        </a>
+                        <a href="https://goo.gl/maps/B3yzqh8WKjiGVKjN6" target="_blank" style="text-decoration:none">
+                            <h5>Hospital Municipal Dr. Carmino Caricchio</h5>
+                        </a>
                         <p>Av. Celso Garcia, 4815 - Tatuapé, São Paulo - SP<br>
                             CEP: 03085-030<br>
                             Tel: (11) 2942-8094 | (11) 3394-7081
                     </div>
                     <div>
-                        <img src="img/hp03.png" alt="Local03">
-                        <h5>Hospital do Servidor Público Municipal – Aclimação</h5>
+                        <a href="https://goo.gl/maps/Cu4sN2TJma2Dxqix8" target="_blank" style="text-decoration:none">
+                            <img src="img/hp03.png" alt="Local03">
+                        </a>
+                        <a href="https://goo.gl/maps/Cu4sN2TJma2Dxqix8" target="_blank" style="text-decoration:none">
+                            <h5>Hospital do Servidor Público Municipal – Aclimação</h5>
+                        </a>
                         <p>R. Castro Alves, 60 - Aclimação, São Paulo - SP<br>
                             CEP: 01532-000<br>
                             Tel: (11) 3277-5303                          
                     </div>
                     <div>
-                        <img src="img/hp04.png" alt="Local04">
-                        <h5>Hemocentro da Santa Casa de São Paulo</h5>
+                        <a href="https://goo.gl/maps/KceVfF4cQjBLd1ND7" target="_blank" style="text-decoration:none">
+                            <img src="img/hp04.png" alt="Local04">
+                        </a>
+                        <a href="https://goo.gl/maps/KceVfF4cQjBLd1ND7" target="_blank" style="text-decoration:none">
+                            <h5>Hemocentro da Santa Casa de São Paulo</h5>
+                        </a>
                         <p>R. Marquês de Itu, 579 - Vila Buarque, São Paulo - SP<br>
                             CEP: 01223-001<br>
                             Tel: (11) 2176-7155                      
                     </div>
                     <div>
-                        <img src="img/hp05.png" alt="Local05">
-                        <h5>Banco de Sangue do Hospital Santa Marcelina</h5>
+                        <a href="https://goo.gl/maps/vJeu7pwgMb26PaNC8" target="_blank" style="text-decoration:none">
+                            <img src="img/hp05.png" alt="Local05">
+                        </a>
+                        <a href="https://goo.gl/maps/vJeu7pwgMb26PaNC8" target="_blank" style="text-decoration:none">
+                            <h5>Banco de Sangue do Hospital Santa Marcelina</h5>
+                        </a>
                         <p>R. Harry Dannenberg, 473 - Vila Carmosina, São Paulo - SP<br>
                             CEP: 08270-010<br>
                             Tel: (11) 2523-0546                     
                     </div>
                     <div>
-                        <img src="img/hp06.png" alt="Local06">
-                        <h5>Hospital do Campo Limpo</h5>
+                        <a href="https://goo.gl/maps/DDMsJf8BjJeseDKd7" target="_blank" style="text-decoration:none">
+                            <img src="img/hp06.png" alt="Local06">
+                        </a>
+                        <a href="https://goo.gl/maps/DDMsJf8BjJeseDKd7" target="_blank" style="text-decoration:none">
+                            <h5>Hospital do Campo Limpo</h5>
+                        </a>
                         <p>Estr. de Itapecerica - Vila Maracana, São Paulo - SP<br>
                             CEP: 03807-230<br>
                             Tel: (11) 3277-5303                       
