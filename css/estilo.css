@@ -348,6 +348,23 @@ h1>span:nth-child(1)
     position: relative;
     top: -15%; left: 5%;
 }
+.blob .b2{position: relative;}
+.blob .b2::before
+{
+    width: 250px;
+    height: 250px;
+    background-color: #2cb091;
+    position: absolute; 
+    top: 50%; left: 50%;
+    transform: translate(-51%, -50%) scale(.4);
+    z-index: 10;
+}
+.blob .b2>img
+{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-51%, -50%) scale(.4);
+}
 
 /* Fim SOBRE - O QUE É */
 
