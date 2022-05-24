@@ -41,10 +41,18 @@ header{display: none}
     transform: rotate(180deg) !important;
 }
 
+.iniciativa{margin: 15vw 0;}
 .iniciativa>article{flex-direction: column-reverse;}
 .iniciativa h2 
 {
+    padding: 0 15vw;
+    margin: 0 !important;
     font-size: clamp(.7em, 11vw, 2.5em);
+    line-height: 1.1em;
+}
+.iniciativa h2:nth-child(2)
+{
+    margin-left: 1.5em !important;
 }
 .iniciativa p 
 {
@@ -58,6 +66,41 @@ header{display: none}
     width: 150%;
     border-radius: 0;
     left: -15%;
+}
+
+.sobre{margin: 30vw 0;}
+.sobre h2
+{
+    font-size: clamp(.7em, 11vw, 2.5em);
+    padding: 15vw;
+}
+.sobre p 
+{
+    padding: 5vw;
+    margin: 5vw !important;
+    position: relative;
+    z-index: 1;
+}
+.oProjeto
+{
+    display: flex !important;
+    flex-direction: column;
+}
+.blob
+{
+    height: 50vw !important;
+}
+.b1
+{
+    position: absolute !important;
+    top: 16% !important; left: -10% !important;
+    z-index: 0;
+}
+.b3
+{
+    position: absolute !important;
+    top: 43% !important; left: 55%;
+    z-index: 0;
 }
 
 
