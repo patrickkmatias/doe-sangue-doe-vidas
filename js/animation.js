@@ -167,12 +167,23 @@ fechar.onclick = function(){
 
 /* navegação */
 
+$(document).ready(scrollFix())
+
+function scrollFix(){
+    gsap.to(window, {
+        duration: 0,
+        scrollTo: {
+            y: '#banner', 
+        }
+    });
+};
+
 function oque(){
     gsap.to(window, {
         duration: 2,
         ease: 'power1.inOut', 
         scrollTo: {
-            y: '.sobre', 
+            y: '.iniciativa', 
         }
     });
 };

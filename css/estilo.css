@@ -260,16 +260,22 @@ h1>span:nth-child(1)
     justify-content: space-between; /*Espaçamento central entre os itens*/
 }
 
-/* Começo SOBRE - O QUE É */
+/* Começo O QUE É */
 .iniciativa {
     padding: 100px 0;
+    margin: 7% auto;
     display: flex;
     justify-content: center;
 }
+.iniciativa div.topo div
+{
+    position: relative;
+    left: -5%;
+}
 .iniciativa a{
     text-decoration: none;
-    font-weight: 400;
     color: #000;
+    font-weight: 300;
     
     transition: all .5s;
 }
@@ -277,12 +283,11 @@ h1>span:nth-child(1)
     color: #34cfaa;
 }
 .iniciativa img {
-    width: 630px;
-    height: 440px;
-    margin-right: 25px;
+    width: 50%;
+    height: auto;
 
     position: relative;
-    top: 5%; left: 0;
+    top: 5%; left: -10%;
 
     border-radius: 0 45% 45% 0;
     background: linear-gradient(145deg, #c3fff2, #a4d6cb);
@@ -316,7 +321,7 @@ h1>span:nth-child(1)
     font-family: 'Roboto Flex', sans-serif;
     font-style: normal;
     font-size: 1.5em;
-    line-height: 130%;
+    line-height: 150%;
     letter-spacing: 1px;
     text-align: justify;
     opacity: 0
@@ -325,7 +330,7 @@ h1>span:nth-child(1)
 
 
 .sobre {
-    background: #34cfaa;
+    background: linear-gradient(45deg, #34cfaa, #35d8b2, #2dbe9c);
     padding: 100px 0 150px 0;
     display: flex;
     justify-content: center;
@@ -777,6 +782,7 @@ tr:nth-child(odd) {
     width: 350px;
     margin-bottom: 60px;
     background-color: #fff;
+    transition: all 1s;
 }
 
 .wrapperLoc img{
@@ -786,9 +792,12 @@ tr:nth-child(odd) {
     height: auto;
     transition: all 1s;
 }
+.wrapperLoc:hover #img2{opacity: 1;}
 #img2{
     width: 45%;
     margin: 0 auto;
+    opacity: 0;
+    transition: all 1s;
 }
 
 .contentLoc{
@@ -1015,10 +1024,7 @@ tr:nth-child(odd) {
     
     transition: all .5s;
 }
-.rodape a:hover
-{
-    color: #b6eee1;
-}
+.rodape a:hover{color: #b6eee1;}
 .direitos{
     height: 50px;
     width: 100%;
@@ -1033,6 +1039,8 @@ tr:nth-child(odd) {
     font-size: 10pt;
     color: white;
 }
-.direitos span{
+.direitos a{
+    text-decoration: none;
     color: #b6eee1;
 }
+.direitos span{color: #b6eee1;}
