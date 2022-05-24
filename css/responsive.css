@@ -1,0 +1,66 @@
+@media (max-width: 425px){
+
+header{display: none}
+
+#banner{overflow: visible;}
+.wrapperVideo
+{
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    transform: translateY(0);
+    border-radius: 0;
+}
+#video{height: 100%;}
+.neumorphism{display: none;}
+.bkg.primeiro
+{
+    width: 300vw !important;
+    height: auto;
+    position: relative;
+    top: -1%;
+}
+#slogan
+{
+    justify-content: flex-end;
+    position: relative;
+    top: -15%;
+}
+#slogan p
+{
+    width: 80vw;
+    font-size: clamp(.5em, 10vw, 1.5em);
+    white-space: normal;
+    text-align: center;
+}
+
+#superexposed{display: none;}
+.mouse
+{
+    border-radius: 7px !important;
+    transform: rotate(180deg) !important;
+}
+
+.iniciativa>article{flex-direction: column-reverse;}
+.iniciativa h2 
+{
+    font-size: clamp(.7em, 11vw, 2.5em);
+}
+.iniciativa p 
+{
+    margin-top: 10vw;
+    padding: 10vw;
+    font-smooth: always;
+}
+
+.iniciativa img
+{
+    width: 150%;
+    border-radius: 0;
+    left: -15%;
+}
+
+
+
+
+}
