@@ -93,6 +93,44 @@ tl2.to(['#topo', '#banner>a'],{
     duration: 2,
     opacity: 1
 })
+/* entradas de texto */ 
+
+gsap.to('.titleLogo', { 
+
+    scrollTrigger: { 
+        trigger: '.titleLogo', 
+        start: 'center center', 
+        toggleClass: 'animate__fadeInDown',
+        once: true, 
+        markers: false 
+    }, 
+    opacity: 1,
+    onStart: function(){
+        gsap.to('.titleLogo2',{
+            delay: 0.3,
+            onStart: function(){
+            document.querySelector('.titleLogo2').classList.add('animate__fadeInDown')
+        }}),
+        gsap.to('.iniciativa p',{
+            opacity: 1,
+            duration: 1,
+            delay: 0.8
+        })
+    }
+});
+
+gsap.from('.oProjeto p', {
+    scrollTrigger: {
+        trigger: '.oProjeto p',
+        start: 'top center',
+        markers: false
+    },
+    opacity: 0,
+    y: 50,
+    duration: 0.6,
+    stagger: 0.4,
+    ease: 'powerOut'
+})
 
 
 /* animação botão tabela */

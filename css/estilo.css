@@ -295,13 +295,14 @@ h1>span:nth-child(1)
     font-weight: 400;
     font-size: 3.5em;
     margin: 0 25px;
+    opacity: 0;
 }
 
 .iniciativa h2 span {
     color: #36dbb4;
 }
 
-.iniciativa h3 {
+.iniciativa h2:nth-child(2) {
     font-family: 'Comfortaa', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -318,6 +319,7 @@ h1>span:nth-child(1)
     line-height: 130%;
     letter-spacing: 1px;
     text-align: justify;
+    opacity: 0
 }
 
 
@@ -347,7 +349,6 @@ h1>span:nth-child(1)
     font-size: 3.0em;
     margin: 0 auto 70px auto;
     text-align: center;
-
 }
 .sobre img {
     width: 630px;
