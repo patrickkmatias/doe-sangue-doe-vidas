@@ -963,7 +963,12 @@ tr:nth-child(odd) {
     height: 500px;
     padding: 5% 0 10% 0;
 }
-.palestra h2{
+.palestra .site .conteudoPalestra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.palestra .conteudoPalestra h2{
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -971,10 +976,6 @@ tr:nth-child(odd) {
     text-align: start;
     margin: 30px 10px 40px 10px;
     color: #1d7b64;
-}
-.palestra .conteudoPalestra{
-    display: flex;
-    justify-content: space-between;
 }
 .palestra .contato{
     width: 480px;

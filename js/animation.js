@@ -189,6 +189,19 @@ fechar.onclick = function(){
 }
 
 
+/* slick slider de Como Funciona */
+const mediaQuery = window.matchMedia('(max-width: 425px)')
+
+if (mediaQuery.matches) {
+
+    $('#conteudoEtapas').slick({
+        arrows: false
+    }) 
+
+  }
+
+
+
 /* navegação */
 
 function scrollFix(){
