@@ -118,13 +118,13 @@ header{display: none}
 }
 
 
-#doadores .site .topo .doadoresTxt p{
+#doadores .doadoresTxt p{
     width: auto;
     margin-left: 30px;
 }
 
-#doadores .site .topo img{
-    display: none;
+#doadores img{
+    display: none !important;
 }
 .beneficios .oProjeto{
     flex-direction: column;
