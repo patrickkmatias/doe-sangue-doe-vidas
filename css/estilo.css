@@ -307,8 +307,8 @@ h1>span:nth-child(1)
 }
 .iniciativa a{
     text-decoration: none;
-    color: #000;
     font-weight: 300;
+    color: #686a6f;
     
     transition: all .5s;
 }
@@ -334,6 +334,7 @@ h1>span:nth-child(1)
     font-size: 3.5em;
     margin: 0 25px;
     opacity: 0;
+    color: #1d7b64;
 }
 
 .iniciativa h2 span {
@@ -354,7 +355,7 @@ h1>span:nth-child(1)
     line-height: 150%;
     letter-spacing: 1px;
     text-align: justify;
-    opacity: 0
+    opacity: 0;
 }
 
 
@@ -482,6 +483,7 @@ h1>span:nth-child(1)
     font-size: 3.0em;
     margin-bottom: 70px;
     text-align: center;
+    color: #1d7b64;
 }
 
 #etapas #conteudoEtapas {
@@ -501,14 +503,17 @@ h1>span:nth-child(1)
     justify-content: space-between;
     border: solid #EDEDED 1px;
     transition: all 1s;
+    background: #fff;
+    
 }
 #etapas #conteudoEtapas div img {
     width: 100px;
     height: 100px;
-    background: #fff;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    background-color: #2dbe9c;
     margin-top: -40px;
     margin-left: 35px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 11%);
 }
 
 #etapas #conteudoEtapas h5 {
@@ -534,7 +539,7 @@ h1>span:nth-child(1)
 #etapas .caption
 {
     font-size: .8em;
-    color: black;
+    color: #1d7b64;
 }
 
 #conteudoEtapas div:hover{
@@ -558,7 +563,7 @@ h1>span:nth-child(1)
 /* Fim ETAPAS */
 
 #tipo{
-    padding-bottom: 100px;
+    padding: 0 10px 100px 10px;
 }
 
 #tipo h2
@@ -607,6 +612,7 @@ h1>span:nth-child(1)
     text-align: justify;
     line-height: 130%;
     font-family: 'Roboto Flex', sans-serif;
+    color: #686a6f;
 }
 #tabela,
 .fechar
@@ -711,18 +717,19 @@ tr:nth-child(odd) {
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
+    color: #1d7b64;
 }
 #doadores .caption
 {
     font-size: .8em;
     padding: 0 2vw 1.5em 2vw;
-    color: gray;
 }
 #doadores p {
     text-align: justify;
     line-height: 130%;
     font-size: .9em;
     font-family: 'Roboto Flex', sans-serif;
+    color: #686a6f;
 }
 
 #doadores article img{
@@ -775,32 +782,6 @@ tr:nth-child(odd) {
     padding: 5%;
 }
 
-
-.locais {
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-    background:#f7f7f7;
-}
-.locais p{
-    width: 350px;
-    margin-bottom: 30px;
-}
-.locais .site h2 {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.0em;
-    margin-bottom: 70px;
-    text-align: center;
-}
-
-.locais .site .conteudoLocais {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 .loc{
     display: flex;
     justify-content: center;
@@ -815,6 +796,7 @@ tr:nth-child(odd) {
     font-size: 3.0em;
     margin-bottom: 70px;
     text-align: center;
+    color: #1d7b64;
 }
 
 .loc .site .conteudoLoc{
@@ -831,6 +813,7 @@ tr:nth-child(odd) {
     margin-bottom: 60px;
     background-color: #fff;
     transition: all 1s;
+    border: solid #EDEDED 1px;
 }
 
 .wrapperLoc img{
@@ -908,7 +891,7 @@ tr:nth-child(odd) {
 
 
 #mais{
-    padding-bottom: 100px;
+    padding: 0 10px 100px 10px;
 }
 
 #mais article
@@ -949,6 +932,7 @@ tr:nth-child(odd) {
     text-align: justify;
     line-height: 130%;
     font-family: 'Roboto Flex', sans-serif;
+    color: #686a6f;
 }
 #mais a{
     width: fit-content;
@@ -985,18 +969,19 @@ tr:nth-child(odd) {
     font-weight: 400;
     font-size: 3.0em;
     text-align: start;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 30px 10px 40px 10px;
+    color: #1d7b64;
 }
 .palestra .conteudoPalestra{
     display: flex;
     justify-content: space-between;
 }
 .palestra .contato{
-    width: 420px;
+    width: 480px;
+    margin: 10px;
 }
 .palestra .contato .blocos{
-    width: 420px;
+    width: 480px;
     height: fit-content;
     margin-bottom: 40px;
     display: flex;
@@ -1009,7 +994,7 @@ tr:nth-child(odd) {
     margin-top: 5%;
 }
 .palestra .contato .blocos .icon{
-    width: 80px;
+    width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -1017,7 +1002,7 @@ tr:nth-child(odd) {
     margin-right: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.11);
     border-radius: 10%;
-    background-color: #1d7b64;
+    background-color: #2dbe9c;
     
 }
 .palestra .contato .blocos .icon img{
@@ -1041,9 +1026,9 @@ tr:nth-child(odd) {
     font-family: 'Roboto Flex', sans-serif;
 }
 .palestra .palestraImg{
-    width: 590px;
+    width: 480px;
     height: 350px;
-    background: #C4C4C4;
+    background: #000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .palestra .iframe
