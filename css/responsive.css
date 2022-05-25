@@ -41,7 +41,9 @@ header{display: none}
     transform: rotate(180deg) !important;
 }
 
-.iniciativa>article{flex-direction: column-reverse;}
+.iniciativa>article{
+    flex-direction: column-reverse;
+}
 .iniciativa h2 
 {
     font-size: clamp(.7em, 11vw, 2.5em);
@@ -55,12 +57,50 @@ header{display: none}
 
 .iniciativa img
 {
-    width: 150%;
+    width: 100%;
     border-radius: 0;
-    left: -15%;
+    left: 1%;
+}
+.sobre .oProjeto{
+    flex-direction: column;
+    display: flex;
 }
 
+#etapas #conteudoEtapas{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#tipo{width: 95%;}
+#tipo .site{
+    align-items: center;
+}
+#tipo .site p{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#doadores .site .topo .doadoresTxt{
+    width: auto;
+}
 
+#doadores .site .topo .doadoresTxt p{
+    width: auto;
+    margin-left: 30px;
+}
 
+#doadores .site .topo img{
+    display: none;
+}
+.beneficios .oProjeto{
+    flex-direction: column;
+    display: flex;
+}
+#mais .site{
+    align-items: center;
+    width: 95%;
+}
+#mais .site p{
+    margin-bottom: 20px;
+}
 
 }
