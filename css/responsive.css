@@ -2,7 +2,10 @@
 
 header{display: none}
 
-#banner{overflow: visible;}
+#banner
+{
+    overflow: visible;
+}
 .wrapperVideo
 {
     width: 100%;
@@ -15,7 +18,13 @@ header{display: none}
 .neumorphism{display: none;}
 .bkg.primeiro
 {
-    width: 300vw !important;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.bkg.primeiro img
+{
+    width: 250vw !important;
     height: auto;
     position: relative;
     top: -1%;
@@ -42,7 +51,7 @@ header{display: none}
 }
 
 .iniciativa{margin: 15vw 0;}
-.iniciativa>article{flex-direction: column-reverse;}
+.iniciativa>article{flex-direction: column-reverse; overflow: hidden;}
 .iniciativa h2 
 {
     padding: 0 15vw;
@@ -72,13 +81,14 @@ header{display: none}
     display: flex;
 }
 
-.sobre{margin: 30vw 0;}
+.sobre{margin: 30vw 0; overflow: hidden;}
 .sobre h2
 {
     font-size: clamp(.7em, 11vw, 2.5em);
     padding: 15vw;
 }
-.sobre p 
+.sobre p,
+#tipo p 
 {
     padding: 5vw;
     margin: 5vw !important;
@@ -127,5 +137,8 @@ header{display: none}
 #mais .site p{
     margin-bottom: 20px;
 }
+#tipo p{line-height: 1.6em;}
+
+
 
 }
