@@ -146,7 +146,7 @@ gsap.to('.titleLogo', {
 gsap.from('.oProjeto p', {
     scrollTrigger: {
         trigger: '.oProjeto p',
-        start: 'top center',
+        start: '10% bottom',
         markers: false
     },
     opacity: 0,

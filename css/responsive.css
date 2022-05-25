@@ -51,7 +51,12 @@ header{display: none}
 }
 
 .iniciativa{margin: 15vw 0;}
-.iniciativa>article{flex-direction: column-reverse; overflow: hidden;}
+.iniciativa>article
+{
+    height: fit-content;
+    flex-direction: column-reverse; 
+    overflow: visible;
+}
 .iniciativa h2 
 {
     padding: 0 15vw;
@@ -69,12 +74,17 @@ header{display: none}
     padding: 10vw;
     font-smooth: always;
 }
-
-.iniciativa img
+.iniciativa article>div
 {
     width: 100%;
+    height: 100%;
+}
+.iniciativa article>div:nth-child(1){padding-top: 20%;}
+.iniciativa img
+{
+    width: 133%;
     border-radius: 0;
-    left: 1%;
+    left: -1%;
 }
 .sobre .oProjeto{
     flex-direction: column;
