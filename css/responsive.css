@@ -95,6 +95,12 @@ header{display: none}
     position: relative;
     z-index: 1;
 }
+#tabela{
+    margin-left: -60px;
+}
+#tabela .fechar{
+    left: 25%;
+}
 .oProjeto
 {
     display: flex !important;
