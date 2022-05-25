@@ -300,11 +300,6 @@ h1>span:nth-child(1)
     display: flex;
     justify-content: center;
 }
-.iniciativa div.topo div
-{
-    position: relative;
-    left: -5%;
-}
 .iniciativa a{
     text-decoration: none;
     color: #000;
@@ -315,8 +310,13 @@ h1>span:nth-child(1)
 .iniciativa a:hover{
     color: #34cfaa;
 }
-.iniciativa img {
+.iniciativa article>div
+{
     width: 50%;
+    height: auto;
+}
+.iniciativa img {
+    width: 100%;
     height: auto;
 
     position: relative;
