@@ -75,6 +75,94 @@
   
 }
 
+/**
+  * Component: Button
+  * --------------------------------------------------
+  */
+  .c-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+    background-color: transparent;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s linear;
+  }
+  .c-button:hover, .c-button:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  .c-button:not(:disabled) {
+    cursor: pointer;
+  }
+  .c-button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  
+  /**
+    * Component: Button
+    * Modifier: Menu
+    * --------------------------------------------------
+    */
+  .c-button--menu {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    line-height: 0;
+  }
+  .c-button--menu:before, .c-button--menu:after,
+  .c-button--menu .c-button__icon,
+  .c-button--menu .c-button__icon:before {
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background: #1d7b64;
+    transition: all 0.2s ease;
+  }
+  .c-button--menu:before, .c-button--menu:after {
+    content: "";
+    left: 0;
+    right: 0;
+  }
+  .c-button--menu:before {
+    top: 10px;
+  }
+  .c-button--menu:after {
+    bottom: 10px;
+  }
+  .c-button--menu .c-button__icon {
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -3px;
+  }
+  .c-button--menu .c-button__icon:before {
+    content: "";
+    top: 0;
+    left: 0;
+  }
+  .c-button--menu.is-active:before {
+    left: 100%;
+    width: 0;
+  }
+  .c-button--menu.is-active:after {
+    right: 100%;
+    width: 0;
+  }
+  .c-button--menu.is-active .c-button__icon {
+    transform: rotate(45deg);
+  }
+  .c-button--menu.is-active .c-button__icon:before {
+    transform: rotate(90deg);
+  }
+
 /* svg blobs masks */
 
 .b2 

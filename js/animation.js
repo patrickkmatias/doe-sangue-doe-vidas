@@ -108,12 +108,14 @@ function animateSlogan() {
 function desanimateSlogan(){
 
     gsap.set('#topo', {
-        opacity: 1,
-        transform: 'translateX(-50%) ' + 'scale(1)'
+        opacity: 1
     })
     gsap.set('#banner>a', {
         opacity: 1,
         transform: 'translateX(-50%) ' + 'scale(1)'
+    })
+    gsap.set('.pp3', {
+        opacity: 1
     })
 }
 
@@ -253,3 +255,15 @@ function local(){
     });
 };
 
+/* botão menu */
+;(function($, window, document, undefined) {
+
+    'use strict';
+  
+    var $menuButton = $('.js-button--menu');
+  
+    $menuButton.on('click.ui.menu', function() {
+      $(this).toggleClass('is-active');
+    });
+  
+  })(jQuery, window, document);
