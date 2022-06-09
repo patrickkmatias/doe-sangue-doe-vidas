@@ -19,23 +19,60 @@ p{font-weight: 200;}
     height: fit-content;
     position: fixed;
     top: 10px; right: 10px;
-    
-    border: solid #1d7b64 5px;
-    border-radius: 15px;
     z-index: 1000;
 
     display: flex;
     justify-content: flex-end;
-    transform: scale(.5);
 }
+div.border
+{
+    height: fit-content;
+    border: solid #1d7b64 5px;
+    border-radius: 15px;
+    transform: scale(.5);
+    position: relative;
+    z-index: 1000;
+    transition: all .5s;
+}
+.border.is-active{filter: brightness(2);}
 #topo button
 {
-
     padding: 5px;
-
-
     filter: brightness(1);
     transform: scale(.7);
+}
+header nav
+{
+    width: 20vw;
+    height: 100vh;
+    position: relative;
+    top: -10px; right: calc(-10px + -20vw);
+
+    background: linear-gradient(-90deg, #2fba99, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    transition: right .5s ease-in-out;
+}
+nav.is-active{right: -10px;}
+#topo a
+{
+    margin: 2em 0 2em 6vw;
+    color: white;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+    font-size: clamp(0px, 1.6vw, 1.1em);
+    letter-spacing: 1px;
+    font-smooth: always;
+    transition: all .5s;
+}
+#topo a:hover
+{
+    color: #1d7b64;
 }
 #banner
 {
@@ -61,8 +98,17 @@ p{font-weight: 200;}
 }
 .wrapper.active
 {
-    z-index: -1 !important;
+    z-index: -1 !important;    
+    background-color: #000 !important;
+    opacity: 0;
 }
+.wrapper.active > h1{display: none !important;}
+.wrapper.dim /* quando menu estiver ativo */
+{
+    z-index: 999 !important;
+    opacity: .3 !important; 
+}
+
 .wrapper h1
 {
     text-align: center;
@@ -171,8 +217,8 @@ h1>span:nth-child(1)
     border-radius: 1px;
     background-color: #C4C4C4;
 }
-#slogan .pp1{top:1em;}
-#slogan .pp2{color: #b6eee1;}
+#slogan .pp1{top: .5em !important;}
+#slogan .pp2{top:-.5em;color: #b6eee1;}
 .pp3
 {
     width: 18vw;

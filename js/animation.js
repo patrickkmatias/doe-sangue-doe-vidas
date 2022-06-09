@@ -83,6 +83,7 @@ function animateSlogan() {
         },
         onComplete: function(){
             pp2.classList.add("animate__fadeOutDown")
+            gsap.to('#banner>a',{transform: 'translateX(-50%) ' + 'scale(1)'})
         }
     })
 
@@ -93,23 +94,13 @@ function animateSlogan() {
             pp3.classList.add("animate__fadeInUp")
         },
         onComplete: function(){
-            gsap.to('#topo',{transform: 'translateX(-50%) ' + 'scale(1)'})
-            gsap.to('#banner>a',{transform: 'translateX(-50%) ' + 'scale(1)'})
+            gsap.to('#banner>a',{opacity:1})
         }
-    })
-    gsap.set('#topo',{y:-300})
-    tl2.to(['#topo', '#banner>a'],{
-        delay: .5,
-        duration: 2,
-        opacity: 1
     })
 }
 
 function desanimateSlogan(){
 
-    gsap.set('#topo', {
-        opacity: 1
-    })
     gsap.set('#banner>a', {
         opacity: 1,
         transform: 'translateX(-50%) ' + 'scale(1)'
@@ -264,6 +255,9 @@ function local(){
   
     $menuButton.on('click.ui.menu', function() {
       $(this).toggleClass('is-active');
+      $('header nav').toggleClass('is-active');
+      $('.border').toggleClass('is-active');
+      $('.wrapper').toggleClass('dim');
     });
   
   })(jQuery, window, document);
