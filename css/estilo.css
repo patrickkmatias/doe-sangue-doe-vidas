@@ -72,7 +72,7 @@ nav.is-active{right: -10px;}
 }
 #topo a:hover
 {
-    color: #1d7b64;
+    color: #8be4ce;
 }
 #banner
 {
@@ -942,28 +942,27 @@ tr:nth-child(odd) {
     justify-content: center;
     width: 100%;
     height: 500px;
-    padding: 5% 0 10% 0;
 }
-.palestra .site .conteudoPalestra{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.palestra .conteudoPalestra{display: flex; align-items: center;}
+.palestra .conteudoPalestra>div{width: clamp(0px, 100%, 600px); padding: 50px;}
+.palestra iframe
+{
+    width: clamp(0px, 100%, 480px);
+    height: 75%;
 }
+
 .palestra .conteudoPalestra h2{
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
     font-size: 3.0em;
-    text-align: start;
+    text-align: center;
     margin: 30px 10px 40px 10px;
     color: #1d7b64;
 }
-.palestra .contato{
-    width: 480px;
-    margin: 10px;
-}
-.palestra .contato .blocos{
-    width: 480px;
+
+.palestra .blocos{
+    width: 100%;
     height: fit-content;
     margin-bottom: 40px;
     display: flex;
@@ -972,10 +971,10 @@ tr:nth-child(odd) {
     border-radius: 10px;
     background-color: #b6eee1;
 }
-.palestra .contato .blocos:nth-child(1){
+.palestra .blocos:nth-child(1){
     margin-top: 5%;
 }
-.palestra .contato .blocos .icon{
+.palestra .blocos .icon{
     width: 100px;
     height: 100px;
     display: flex;
@@ -987,11 +986,11 @@ tr:nth-child(odd) {
     background-color: #2dbe9c;
     
 }
-.palestra .contato .blocos .icon img{
+.palestra .blocos .icon img{
     width: 60px;
     height: 60px;
 }
-.palestra .contato .blocos .desc h5{
+.palestra .blocos .desc h5{
     font-size: 15px;
     font-family: 'Comfortaa', sans-serif;
     padding: 3% 0;
@@ -999,7 +998,7 @@ tr:nth-child(odd) {
 .palestra span{
     color: #31cca7;
 }
-.palestra .contato .blocos .desc p{
+.palestra .blocos .desc p{
     padding: 3% 0;
     width: 320px;
     height: 40px;
@@ -1012,11 +1011,6 @@ tr:nth-child(odd) {
     height: 350px;
     background: #000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.palestra .iframe
-{
-    width: 100%;
-    height: 100%;
 }
 footer
 {
