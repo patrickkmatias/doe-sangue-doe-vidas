@@ -15,7 +15,6 @@ header{display: none}
     border-radius: 0;
 }
 #video{height: 100%;}
-.neumorphism{display: none;}
 .bkg.primeiro
 {
     width: 100vw;
@@ -43,7 +42,6 @@ header{display: none}
     text-align: center;
 }
 
-#superexposed{display: none;}
 .mouse
 {
     border-radius: 7px !important;
