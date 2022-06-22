@@ -77,7 +77,11 @@ header{display: none}
     width: 100%;
     height: 100%;
 }
-.iniciativa article>div:nth-child(1){padding-top: 20%;}
+.iniciativa article>div:nth-child(1)
+{
+    padding-top: 20%;
+    overflow: hidden;
+}
 .iniciativa img
 {
     width: 133%;
@@ -103,12 +107,7 @@ header{display: none}
     position: relative;
     z-index: 1;
 }
-#tabela{
-    margin-left: -60px;
-}
-#tabela .fechar{
-    left: 25%;
-}
+#tipo p{line-height: 1.6em;}
 .oProjeto
 {
     display: flex !important;
@@ -189,32 +188,46 @@ header{display: none}
 }
 .swiper-pagination-bullet-active{background:#23967b !important}
 /* fim carrosel swiperjs */
-#doadores article>div{
-    max-width: 100%;
+
+#tipo #tabela
+{
+    width: 80vw;
 }
-#doadores h2{
-    font-size: 30pt;
-}
+
+#doadores>.site{justify-content: center;}
+
+#doadores article>div{max-width: 80%;}
+#doadores h2{font-size: 30pt;}
 #doadores .doadoresTxt p{
     width: auto;
     margin-left: 30px;
 }
+#doadores img{display: none !important;}
 
-#doadores img{
-    display: none !important;
-}
+.beneficios h2,
+#local h2{font-size: clamp(.7em, 11vw, 2.4em);}
 .beneficios .oProjeto{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
 }
+.beneficios p 
+{
+    width: 80%;
+    margin: 10px auto;
+}
+
+#local .wrapperLoc{padding: 10%;margin: 0 auto !important;}
+.cardLoc h5{height: fit-content;}
+
+#mais{padding: 0;}
 #mais .site{
     align-items: center;
-    width: 95%;
+    width: 80%;
 }
 #mais .site p{
     margin-bottom: 20px;
 }
-#tipo p{line-height: 1.6em;}
+
 
 .palestra{
     height: auto;
@@ -223,6 +236,7 @@ header{display: none}
     display: flex;
     justify-content: center;
 }
+.palestra .conteudoPalestra{flex-direction: column;}
 .palestra .site .conteudoPalestra h2{
     text-align: center;
 }

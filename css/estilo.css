@@ -11,7 +11,7 @@
     /* variaveis globais do css */
 }
 
-p{font-weight: 200;}
+p{font-weight: 300;}
 
 #topo
 {
@@ -646,6 +646,7 @@ tr:nth-child(odd) {
     padding: 0 2vw 1.5em 2vw;
 }
 #doadores p {
+    margin-bottom: 1em;
     text-align: justify;
     line-height: 130%;
     font-size: .9em;
@@ -691,7 +692,6 @@ tr:nth-child(odd) {
 }
 
 .beneficios p{
-    padding: 12% 5% 0 5%;
     font-family: 'Roboto Flex', sans-serif;
     font-style: normal;
     font-size: 1.5em;
@@ -728,10 +728,9 @@ tr:nth-child(odd) {
 }
 
 .wrapperLoc{
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     position: relative;
     width: 350px;
-    margin-bottom: 60px;
     background-color: #fff;
     transition: all 1s;
     border: solid #EDEDED 1px;
