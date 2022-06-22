@@ -456,10 +456,6 @@ h1>span:nth-child(1)
     padding-top: 100px;
 }
 #etapas>article{margin: 0 auto;}
-#etapas p{
-    width: 300px;
-    margin-bottom: 30px;
-}
 #etapas h2,
 #tipo h2{
     font-family: 'Comfortaa';
@@ -469,67 +465,6 @@ h1>span:nth-child(1)
     margin-bottom: 70px;
     text-align: center;
     color: #1d7b64;
-}
-
-#etapas #conteudoEtapas {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-}
-#etapas #conteudoEtapas div {
-    width: 280px;
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: solid #EDEDED 1px;
-    transition: all 1s;
-    background: #fff;
-    
-}
-#etapas #conteudoEtapas div img {
-    width: 100px;
-    height: 100px;
-    background-color: #2dbe9c;
-    margin-top: -40px;
-    margin-left: 35px;
-    border-radius: 10%;
-    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 11%);
-}
-
-#etapas #conteudoEtapas h5 {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#etapas #conteudoEtapas p,
-.caption
-{
-    width: fit-content;
-    height: auto;
-    font-family: 'Roboto Flex', sans-serif;
-    font-style: normal;
-    font-size: .9em;
-    line-height: 130%;
-    text-align: justify;
-}
-#etapas .caption
-{
-    font-size: .8em;
-    color: #1d7b64;
-}
-
-#conteudoEtapas div:hover{
-    background: #fff;
-    box-shadow: 1px 1px 20px 1px rgba(36, 36, 36, 0.137);
 }
 #etapas a
 {

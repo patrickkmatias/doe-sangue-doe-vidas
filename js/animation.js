@@ -185,15 +185,27 @@ fechar.onclick = function(){
 /* slick slider de Como Funciona */
 const mediaQuery = window.matchMedia('(max-width: 425px)')
 
+function prepararSlides(){
+    $('#conteudoEtapas').wrap('<div class="swiper"></div>');
+    $('#conteudoEtapas').addClass('swiper-wrapper');
+    $('#conteudoEtapas>*').addClass('swiper-slide');
+    $('.swiper').append('<div class="swiper-pagination"></div>');
+}
+function iniciarSlider(){
+    swiper = new Swiper('.swiper', {
+        effect: "cards",
+        rewind: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+      });
+}
+
 if (mediaQuery.matches) {
-
-    $('#conteudoEtapas').slick({
-        arrows: false
-    }) 
-
-  }
-
-
+    prepararSlides();
+    iniciarSlider();
+    }
 
 /* navegação */
 

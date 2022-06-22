@@ -130,7 +130,65 @@ header{display: none}
     top: 43% !important; left: 55%;
     z-index: 0;
 }
-
+/* inicio carrosel swiperjs */
+.swiper {
+    width: 280px;
+    height: 320px;
+    margin-top: 10%;
+  }
+  
+  .swiper-slide
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid #EDEDED 1px;
+    transition: all 1s;
+    background: #fff;
+    overflow: visible !important;
+  }
+  .swiper-slide img {
+      width: 100px;
+      height: 100px;
+      margin: -10% auto 0 auto;
+      background-color: #2dbe9c;
+      border-radius: 10%;
+      box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 11%);
+  }
+  .swiper-slide h5 
+  {
+      padding-left: 1rem;
+      font-family: 'Comfortaa';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  .swiper-slide p,
+  .caption
+  {
+      width: fit-content;
+      height: auto;
+      padding: 0 1.5rem 1rem 1rem;
+      font-family: 'Roboto Flex', sans-serif;
+      font-style: normal;
+      font-size: .9em;
+      line-height: 130%;
+      text-align: justify;
+  }
+  .caption
+  {
+      font-size: .8em;
+      color: #1d7b64;
+  }
+  .swiper-pagination
+{
+    position: relative !important;
+    bottom: -15px !important;
+}
+.swiper-pagination-bullet-active{background:#23967b !important}
+/* fim carrosel swiperjs */
 #doadores article>div{
     max-width: 100%;
 }
@@ -186,4 +244,71 @@ header{display: none}
 }
 
 
+}
+
+@media (min-width: 426px){
+    #etapas #conteudoEtapas {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    #etapas #conteudoEtapas div {
+        width: 280px;
+        height: 300px;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: solid #EDEDED 1px;
+        transition: all 1s;
+        background: #fff;
+        
+    }
+    #etapas #conteudoEtapas div img {
+        width: 100px;
+        height: 100px;
+        background-color: #2dbe9c;
+        margin-top: -40px;
+        margin-left: 35px;
+        border-radius: 10%;
+        box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 11%);
+    }
+    
+    #etapas #conteudoEtapas h5 {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    #etapas #conteudoEtapas p,
+    .caption
+    {
+        width: fit-content;
+        height: auto;
+        font-family: 'Roboto Flex', sans-serif;
+        font-style: normal;
+        font-size: .9em;
+        line-height: 130%;
+        text-align: justify;
+    }
+    #etapas p{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    #etapas .caption
+    {
+        font-size: .8em;
+        color: #1d7b64;
+    }
+    
+    #conteudoEtapas div:hover{
+        background: #fff;
+        box-shadow: 1px 1px 20px 1px rgba(36, 36, 36, 0.137);
+    }
 }
