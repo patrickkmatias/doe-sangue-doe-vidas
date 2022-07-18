@@ -1,7 +1,0 @@
-Criar um site com foco na disseminação de informações sobre a doação de sangue. 
-
-- O site terá uma página, atuará como a extensão de um panfleto;
-- No topo terá o logo e os tópicos de interesse tratados em cada seção;
-- As cores presentes serão vermelho, branco, preto... (a definir)
-- Layout (a definir)
-- 
