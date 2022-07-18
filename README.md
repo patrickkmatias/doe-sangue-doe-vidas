@@ -1,6 +1,6 @@
 # Doe Sangue Doe Vidas
 
-![Slogan Doe Sangue Doe Vidas](img/dsdv-slogan.gif)
+[Slogan Doe Sangue Doe Vida](https://user-images.githubusercontent.com/99044724/179572478-5b83a9ac-454c-451f-a640-7392f8a741a9.webm)
 
 Site institucional desenvolvido em parceria com uma turma técnica de enfermagem no Senac SMP, com o intuito da divulgação e incentivo da doação de sangue e seus benefícios.
 
