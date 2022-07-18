@@ -35,7 +35,7 @@ tl1.to('.wrapper',
 /* animação slogan */
 
 
-$(document).ready(desanimateSlogan())
+$(document).ready(animateSlogan())
 
 /* para desligar ou ligar a animação, 
 acrescente ou remova 'des' ao inicio da função */
